@@ -1,9 +1,11 @@
-.container {
-  display: grid;
-  grid-auto-flow: row dense;
+<div class="container">
+  <div ></div>
+</div>
+.container {  display: grid;
   grid-template-columns: 1193px 11.8px;
   grid-template-rows: 124px 482px 300px;
   gap: 0px 0px;
+  grid-auto-flow: row dense;
   grid-template-areas:
     ". ."
     ". ."

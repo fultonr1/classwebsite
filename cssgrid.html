@@ -1,82 +1,72 @@
-<!doctype html>
-<div class="container">
-  <div class="header"></div>
-  <div class="box-1"></div>
-</div>
- <body>
-   <div class="container">
-     <div class="header">
-       <h1>css grid</h1>
-     </div>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
 
-    <div class="side-left">
-      <div class="side-right">
-        <div class="center">
-       <div class="big-right">
-         <div class="big-left">
-           <div class="footer">
-     </div>
- </body>
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<style>
+div {
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+
+</body>
+</html>
 
 
 
- <style>
- div {
-   width: 300px;
-   height: 100px;
-   background-color: blue;
-   border: 1px solid black;
- }
 
- #myDiv {
-   transform: rotateX(150deg);
- }
- </style>
- </head>
- <body>
-
- <h1>The rotateX() Method</h1>
-
- <p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
-
- <div>
- This a normal div element.
- </div>
-
- <div id="myDiv">
- This div element is rotated 150 degrees.
- </div>
-
-
- <html>
- <head>
- <style>
- div {
-   width: 100px;
-   height: 100px;
-   background-color: lightpink;
-   animation-name: example;
-   animation-duration: 4s;
- }
- ​
- @keyframes example {
-   from {background-color: red;}
-   to {background-color: yellow;}
- }
- </style>
- </head>
- <body>
- ​
- <h1>CSS Animation</h1>
- ​
- <div></div>
- ​
- <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
- ​
- </body>
- </html>
- ​
- ​
- ​
- </body>
- </html>
+​
+​

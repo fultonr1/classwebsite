@@ -1,0 +1,92 @@
+<!-- https://lcc-adm.github.io/class-site/flex.html -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>my flexbox page</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    #box1 {
+      background: #888;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    #box2 {
+      background: #888;
+      display: flex;
+    }
+
+    #box3 {
+      background: #888;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .red {
+      background: red;
+      width: 150px;
+      height: 150px;
+      flex-grow: 1;
+    }
+
+    .yellow {
+      background: yellow;
+      width: 150px;
+      height: 150px;
+      flex-grow: 3;
+    }
+
+    .blue {
+      background: blue;
+      width: 150px;
+      height: 150px;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+
+  <div id="box2">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+
+  <div id="box3">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+
+  <div id="box4">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+
+  <div id="box5">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+</body>
+
+</html>

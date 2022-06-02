@@ -1,66 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
-div {
-  width: 100px;
-  height: 100px;
-  background-color: lightpink;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-}
+  <meta charset="utf-8">
+  <title>my grid page</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
 
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-</style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header header"
+        "side-left center side-right"
+        "big-left big-left ."
+        ". big-right big-right"
+        "footer footer footer";
+    }
+
+    .header {
+      grid-area: header;
+      background: #46e466;
+    }
+
+    .side-left {
+      grid-area: side-left;
+      background: #674645;
+    }
+
+    .side-right {
+      grid-area: side-right;
+    }
+
+    .center {
+      grid-area: center;
+      background: #af9774;
+    }
+
+    .big-right {
+      grid-area: big-right;
+    }
+
+    .big-left {
+      grid-area: big-left;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
-<h1>CSS Animation</h1>
+    <div class="header">
+      <h1>css grid</h1>
+    </div>
 
-<div></div>
-
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-
-<style>
-div {
-  width: 100px;
-  height: 50px;
-  background-color: pink;
-  font-weight: bold;
-  position: relative;
-  animation: mymove 5s infinite;
-}
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
-}
-</style>
-</head>
-<body>
-
-<h1>CSS Animation</h1>
-
-<p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
-
-<div id="div1">linear</div>
-<div id="div2">ease</div>
-<div id="div3">ease-in</div>
-<div id="div4">ease-out</div>
-<div id="div5">ease-in-out</div>
-
+    <div class="side-left"></div>
+    <div class="side-right"></div>
+    <div class="center"></div>
+    <div class="big-right"></div>
+    <div class="big-left"></div>
+    <div class="footer"></div>
+  </div>
 </body>
+
 </html>

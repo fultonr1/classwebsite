@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 
-<h1>THESE ARE MY sick BOXES</h1>
-  <p style="border: 10px solid black">.....TTYL.....</p>
+<html lang="en">
 
-<h2>more boxes</h2>
+<head>
+  <meta charset="utf-8">
+  <title>my boxes page</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    #box1 {
+      background: purple;
+      color: white;
+      width: 500px;
+      height: 300px;
+      padding: 50px;
+      border: 20px solid black;
+      margin: 30px;
+      margin-bottom: 0px;
+      position: absolute;
+      z-index: 100;
+    }
+
+    #box2 {
+      background: pink;
+      width: 400px;
+      padding: 50px;
+      margin-top: 100px;
+      position: relative;
+      top: -150px;
+      left: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>boxes pages</h1>
+  <div id="box1">
+    <p>content stuff in the box</p>
+    <p>content stuff in the box</p>
+    <p>content stuff in the box</p>
+  </div>
+
+  <div id="box2">
+    <p>another darned box</p>
+  </div>
+
+</body>
+
+</html>

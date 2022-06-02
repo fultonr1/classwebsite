@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>animations</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-image: radial-gradient(circle 800px at 6.8% 8.3%, rgba(255, 244, 169, 1) 0%, rgba(255, 244, 234, 1) 100.2%);
+      min-height: 100vh;
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    h1 {
+      color: blue;
+      font-size: 2rem;
+      text-shadow: 0px 0px transparent;
+      transition: color 1s, font-size .5s, text-shadow .5s;
+    }
+
+    div {
+      background: green;
+      height: 200px;
+      width: 200px;
+      margin: 2rem;
+      border-radius: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border: 15px solid black;
+    }
+
+    #box1 {}
+
+    #box2 {}
+
+
+    #box3 {}
+  </style>
+</head>
+
+<body>
+  <h1>amazing animations</h1>
+  <p>examples of simple animations</p>
+
+  <div id="box1">
+    <p>animate</p>
+  </div>
+  <div id="box2">
+    <p>animate</p>
+  </div>
+  <div id="box3">
+    <p>animate</p>
+  </div>
+</body>
+
+</html>
